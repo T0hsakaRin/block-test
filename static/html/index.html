@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			div {
+				width: 100px;
+				height: 100px;
+				background: yellow;
+			}
+		</style>
+		<!-- link阻塞页面渲染 -->
+		<link rel="stylesheet" href="/css/sleep-3000-common.css" />
+
+		<!-- link不阻塞页面解析 -->
+		<!-- <link rel="stylesheet" href="/css/sleep-3000-common.css" />
+		<script defer type="text/javascript" src="/js/logdiv.js"></script> -->
+
+		<!-- js阻塞页面解析 -->
+		<!-- <script type="text/javascript" src="/js/sleep-3000-index.js"></script>
+    <script defer type="text/javascript" src="/js/logdiv.js"></script> -->
+
+		<!-- js阻塞页面渲染 -->
+		<script type="text/javascript" src="/js/sleep-3000-index.js"></script>
+
+		<!-- <script>
+			window.addEventListener("DOMContentLoaded", () => {
+				console.log("dom树构建完成");
+			});
+		</script> -->
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>
